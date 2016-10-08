@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+
+        <EditText
+            android:id="@+id/ET_nombre"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="18dp"
+            android:hint="Nombre completo"
+            android:inputType="textPersonName|textCapWords" />
+
+        <DatePicker
+            android:id="@+id/dpFechaNacimiento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"
+            android:layout_below="@id/ET_nombre"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/ET_telefono"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="18dp"
+            android:hint="Telefono"
+            android:layout_below="@+id/dpFechaNacimiento"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/ET_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:hint="Email"
+            android:layout_below="@+id/ET_telefono"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/ET_descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:hint="Descripción contacto"
+            android:layout_below="@+id/ET_email"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/botonSiguiente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:hint="Suiguiente"
+            android:layout_below="@+id/ET_descripcion"
+            android:layout_marginTop="10dp" />
+    </RelativeLayout>
+</ScrollView>
